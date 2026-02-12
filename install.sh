@@ -6,6 +6,7 @@ INSTALL_DIR="/opt/regru-set-ip"
 VENV_DIR="$INSTALL_DIR/venv"
 SCRIPT_NAME="regru-set-ip"
 LINK_PATH="/usr/local/bin/$SCRIPT_NAME"
+PYTHON_SCRIPT="$INSTALL_DIR/regru_set_ip.py"
 
 echo "Installing regru-set-ip from $REPO_URL"
 
