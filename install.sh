@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO_URL="https://github.com/yourusername/regru-set-ip.git"
+REPO_URL="https://github.com/CREAsTIVE/regru-set-ip.git"
 INSTALL_DIR="/opt/regru-set-ip"
 VENV_DIR="$INSTALL_DIR/venv"
 SCRIPT_NAME="regru-set-ip"
@@ -17,10 +17,10 @@ command -v python3 >/dev/null 2>&1 || { echo "Error: python3 is required"; exit 
 if [ -d "$INSTALL_DIR" ]; then
     echo "Directory $INSTALL_DIR already exists. Pulling latest changes..."
     cd "$INSTALL_DIR"
-    sudo git pull
+    git pull
 else
     echo "Cloning repository to $INSTALL_DIR"
-    sudo git clone "$REPO_URL" "$INSTALL_DIR"
+    git clone "$REPO_URL" "$INSTALL_DIR"
 fi
 
 # Create virtual environment
