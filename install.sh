@@ -31,12 +31,12 @@ python3 -m venv venv
 "$VENV_DIR/bin/pip" install --upgrade pip
 "$VENV_DIR/bin/pip" install -r requirements.txt
 
-sudo tee "$WRAPPER_PATH" > /dev/null <<EOF
+sudo tee "$LINK_PATH" > /dev/null <<EOF
 #!/bin/bash
 exec "$VENV_DIR/bin/python" "$PYTHON_SCRIPT" "\$@"
 EOF
 
-sudo chmod +x "$WRAPPER_PATH"
+sudo chmod +x "$LINK_PATH"
 
 echo ""
 echo "Installation complete!"
