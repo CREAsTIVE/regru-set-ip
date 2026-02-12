@@ -10,7 +10,7 @@ CLI tool to update an A record (alias) on REG.RU via their API.
 
 ## Installation
 ```bash
-sudo curl -sSL https://raw.githubusercontent.com/CREAsTIVE/regru-set-ip/master/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/CREAsTIVE/regru-set-ip/master/install.sh | sudo bash
 ```
 
 ## Configuration
@@ -22,7 +22,7 @@ REGRU_PASSWORD=your-password
 
 ## Uninstall
 ```bash
-sudo curl -sSL https://raw.githubusercontent.com/CREAsTIVE/regru-set-ip/master/uninstall.sh | bash
+curl -sSL https://raw.githubusercontent.com/CREAsTIVE/regru-set-ip/master/uninstall.sh | sudo bash
 ```
 
 ## Usage
