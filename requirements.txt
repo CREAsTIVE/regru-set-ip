@@ -1,0 +1,3 @@
+regru-api
+python-dotenv
+requests
