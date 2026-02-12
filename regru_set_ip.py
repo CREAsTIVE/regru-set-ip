@@ -22,9 +22,9 @@ def handle_api_response(response: Any, action_description: str) -> None:
             error_text = domain_info.get('error_text', '')
             print(f"WARNING: {action_description} for {dname}: {error_code} {error_text}")
 
-usage = lambda x: f"""Removes current subdomain A record to replace it with new
+usage = f"""Removes current subdomain A record to replace it with new
 Usage: 
-  {x} domain subdomain new_ip
+  regru-set-ip domain subdomain new_ip
 Where:
   - domain: managed domain, like "some-domain.ru"
   - subomain: part before ".some-domain.ru", like "a.b" for "a.b.some-domain.ru"
@@ -61,7 +61,7 @@ def main():
         sys.exit(1)
     
     if len(sys.argv) != 4:
-        print(usage(sys.argv[0]), file=sys.stderr)
+        print(usage, file=sys.stderr)
         sys.exit(1)
 
     domain = sys.argv[1]
