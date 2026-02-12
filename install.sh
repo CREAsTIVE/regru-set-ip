@@ -20,7 +20,7 @@ if [ -d "$INSTALL_DIR" ]; then
     git pull
 else
     echo "Cloning repository to $INSTALL_DIR"
-    git clone "$REPO_URL" "$INSTALL_DIR"
+    sudo git clone "$REPO_URL" "$INSTALL_DIR"
 fi
 
 # Create virtual environment
