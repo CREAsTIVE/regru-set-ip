@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+env/
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files (optional, but recommended)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Your local credentials (already covered by .env)
